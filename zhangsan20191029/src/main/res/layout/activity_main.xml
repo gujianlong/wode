@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="律师圈"
+        android:textSize="45sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/lv"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="律师"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radio02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xiao"
+            android:button="@null"
+            android:gravity="center"
+            android:text="消息"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radio03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/fa"
+            android:button="@null"
+            android:gravity="center"
+            android:text="发现"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radio04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/wo"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+
+</LinearLayout>
